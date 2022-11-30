@@ -1,11 +1,14 @@
 # How to start
 
-- Clone the repository
-- Run the command npm install in root directory of this project to install dependencies
+- Clone the repository using "git clone https://github.com/girjesh-impact/postgres-sequelize.git"
+- Run the command **npm install** in root directory of this project to install dependencies
 - Start the server using the command **node server.js**
 
+
+<br><br>
+
 # Available routes
-There are two routes available in this project.
+There are three routes available in this project.
 
 ## Base url 
 http:localhost:5000
@@ -19,6 +22,7 @@ This route is a test route to confirm everything is working.
 | 200    |  Success | { msg: 'Test route works' }| 
 
 
+<br><br><br>
 
 
 ## POST /users/create
@@ -37,6 +41,8 @@ This route creates a new user in the database.
 | 200    | Success | { success: true, msg: 'User created successfully' } | 
 | 400    | Failure | { success: false, msg: 'Both name and email are required' } |
 | 500    | Error | { success: false, msg: 'Some error occurred' } |
+
+<br><br><br>
 
 ## GET /users 
 This route fetches all the users from the database.
