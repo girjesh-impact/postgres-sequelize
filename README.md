@@ -4,8 +4,7 @@
 - Run the command **npm install** in root directory of this project to install dependencies
 - Start the server using the command **node server.js**
 
-<br>
-<br>
+<br><br>
 
 # Available routes
 
@@ -25,9 +24,7 @@ Response code | Response Type | Example
 :------------ | :------------ | :--------------------------
 200           | Success       | { msg: 'Test route works' }
 
-<br>
-<br>
-<br>
+<br><br><br>
 
 ## POST /users/create
 
@@ -48,9 +45,7 @@ Response code | Response Type | Example
 400           | Failure       | { success: false, msg: 'Both name and email are required' }
 500           | Error         | { success: false, msg: 'Some error occurred' }
 
-<br>
-<br>
-<br>
+<br><br><br>
 
 ## GET /users
 
@@ -92,8 +87,9 @@ SELECT * FROM tablename;                            | Select all fields from tab
 
 Here are the sequelize terminal commands to get started.
 
-Command                  | Usage
------------------------- | :--------------------------------
-npm install sequelize    | Install sequelize package
-npm install pg pg-hstore | Install postgres helper package
-sequelize init           | Initialse a template to work with
+Command                              | Usage
+------------------------------------ | :------------------------------------------
+npm install sequelize                | Install sequelize package
+npm install pg pg-hstore             | Install postgres helper package
+npm install --save-dev sequelize-cli | Install sequelize cli
+npx sequelize-cli init               | Initialse a sequelize template to work with
